@@ -14,35 +14,31 @@
         <img class="gllacy-logo" src="./images/logos/gllacy-logo.svg" alt="Логотип Глейси" width="137" height="56">
       </a>
       <nav class="header-navigation">
-        <div class="catalog-container">
-          <a class="catalog-link" href="#">
-            Каталог
-            <svg class="catalog-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="7" fill="none">
-              <path fill="#2D3440" fill-rule="evenodd"
-                d="M1.80812 1.05317c-.26035-.26035-.68246-.26035-.94281 0-.26035.26035-.26035.68246 0 .94281l4.66034 4.66035a.74088.74088 0 0 0 .00624.00632c.1307.13069.30215.19578.47345.19526.16996-.0005.33977-.06558.46944-.19526a.61255.61255 0 0 0 .00621-.00629l4.66041-4.66038c.2603-.26035.2603-.68246 0-.94281-.2604-.26035-.6825-.26035-.9428 0L6.00334 5.24839 1.80812 1.05317Z"
-                clip-rule="evenodd" />
-            </svg>
-          </a>
-          <div class="catalog-popover catalog-popover-disabled">
-            <ul class="catalog-popover-list">
-              <li class="catalog-popover-item">
-                <a class="catalog-popover-link" href="#">Новинки</a>
-              </li>
-              <li class="catalog-popover-item">
-                <a class="catalog-popover-link" href="/catalog.html">Сливочное</a>
-              </li>
-              <li class="catalog-popover-item">
-                <a class="catalog-popover-link" href="#">Щербеты</a>
-              </li>
-              <li class="catalog-popover-item">
-                <a class="catalog-popover-link" href="#">Фруктовый лед</a>
-              </li>
-              <li class="catalog-popover-item">
-                <a class="catalog-popover-link" href="#">Мелорин</a>
-              </li>
-            </ul>
-          </div>
-        </div>
+        <a class="catalog-link" href="#">
+          Каталог
+          <svg class="catalog-icon" xmlns="http://www.w3.org/2000/svg" width="12" height="7" fill="none">
+            <path fill="#2D3440" fill-rule="evenodd"
+              d="M1.80812 1.05317c-.26035-.26035-.68246-.26035-.94281 0-.26035.26035-.26035.68246 0 .94281l4.66034 4.66035a.74088.74088 0 0 0 .00624.00632c.1307.13069.30215.19578.47345.19526.16996-.0005.33977-.06558.46944-.19526a.61255.61255 0 0 0 .00621-.00629l4.66041-4.66038c.2603-.26035.2603-.68246 0-.94281-.2604-.26035-.6825-.26035-.9428 0L6.00334 5.24839 1.80812 1.05317Z"
+              clip-rule="evenodd" />
+          </svg>
+        </a>
+        <ul class="catalog-popover catalog-popover-disabled">
+          <li class="catalog-popover-item">
+            <a class="catalog-popover-link" href="#">Новинки</a>
+          </li>
+          <li class="catalog-popover-item">
+            <a class="catalog-popover-link" href="/catalog.html">Сливочное</a>
+          </li>
+          <li class="catalog-popover-item">
+            <a class="catalog-popover-link" href="#">Щербеты</a>
+          </li>
+          <li class="catalog-popover-item">
+            <a class="catalog-popover-link" href="#">Фруктовый лед</a>
+          </li>
+          <li class="catalog-popover-item">
+            <a class="catalog-popover-link" href="#">Мелорин</a>
+          </li>
+        </ul>
         <a class="delivery-payment-link" href="#">Доставка и оплата</a>
         <a class="about-company-link" href="#">О компании</a>
       </nav>
@@ -58,14 +54,13 @@
           </svg>
           <span class="visually-hidden">Кнопка поиска по сайту</span>
         </button>
-        <div class="header-search-form-container header-search-form-container-disabled">
-          <form class="header-search-form" action="https://echo.htmlacademy.ru/" method="post">
-            <label class="header-search-form-label">
-              <input class="header-search-form-input" type="text" name="site-search" placeholder="Поиск по сайту"
-                required>
-            </label>
-          </form>
-        </div>
+        <form class="header-search-form header-search-form-disabled" action="https://echo.htmlacademy.ru/"
+          method="post">
+          <label class="header-search-form-label">
+            <input class="header-search-form-input" type="text" name="site-search" placeholder="Поиск по сайту"
+              required>
+          </label>
+        </form>
       </div>
       <div class="header-user-account-container">
         <button class="user-account-entry-button" type="button">
@@ -106,8 +101,8 @@
         </button>
         <div class="header-basket-popover header-basket-popover-disabled">
           <h2 class="header-basket-popover-title">Корзина</h2>
-          <div class="header-basket-popover-content">
-            <div class="header-basket-popover-element">
+          <ul class="header-basket-popover-list">
+            <li class="header-basket-popover-item">
               <img class="element-product-image" src="./images/content/basket/ice-cream-red.png"
                 alt="Изображение мороженого Малинка" width="46" height="46">
               <h3 class="element-product-name">Малинка</h3>
@@ -116,8 +111,8 @@
               <button class="element-remove-button" type="button">
                 <span class="visually-hidden">Убрать позицию товара в корзине</span>
               </button>
-            </div>
-            <div class="header-basket-popover-element">
+            </li>
+            <li class="header-basket-popover-item">
               <img class="element-product-image" src="./images/content/basket/ice-cream-blue.png"
                 alt="Изображение мороженого Бабл-гам" width="46" height="46">
               <h3 class="element-product-name">Бабл-гам</h3>
@@ -126,8 +121,8 @@
               <button class="element-remove-button" type="button">
                 <span class="visually-hidden">Убрать позицию товара в корзине</span>
               </button>
-            </div>
-          </div>
+            </li>
+          </ul>
           <div class="header-basket-popover-container">
             <button class="header-basket-popover-button">Оформить заказ</button>
             <p class="header-basket-popover-total">Итого: 790 ₽</p>
@@ -140,7 +135,7 @@
     </header>
     <main class="page-main">
       <section class="promo">
-        <h2 class="visually-hidden">Слайдер</h2>
+        <h2 class="visually-hidden">Раздел со слайдером</h2>
         <div class="slider-switchers">
           <button class="slider-switch-left" type="button">
             <span class="visually-hidden">Кнопка переключения слайда влево</span>
@@ -294,13 +289,14 @@
             <h3 class="taste-title">Малинка</h3>
             <p class="taste-description">Сливочное мороженое с малиновым джемом</p>
             <p class="taste-price">310 ₽/кг</p>
-            <span class="taste-basket">
+            <button class="taste-basket-button" type="button">
+              <span class="visually-hidden">Кнопка добавления товара в корзину</span>
               <svg class="taste-basket-image" xmlns="http://www.w3.org/2000/svg" width="15" height="14" fill="none">
                 <path fill="#FCFCFC" fill-rule="evenodd"
                   d="M1.167.25a.667.667 0 1 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611L4.138.786A.667.667 0 0 0 3.484.25H1.167ZM5.69 8.544 4.878 4.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"
                   clip-rule="evenodd" />
               </svg>
-            </span>
+            </button>
           </li>
           <li class="taste-card">
             <img class="taste-image" src="./images/content/tastes/sundaes/pistachio-sundae.png"
@@ -308,13 +304,14 @@
             <h3 class="taste-title">Фисташка</h3>
             <p class="taste-description">Фисташковый пломбир с кусочками шоколада</p>
             <p class="taste-price">340 ₽/кг</p>
-            <span class="taste-basket">
+            <button class="taste-basket-button" type="button">
+              <span class="visually-hidden">Кнопка добавления товара в корзину</span>
               <svg class="taste-basket-image" xmlns="http://www.w3.org/2000/svg" width="15" height="14" fill="none">
                 <path fill="#FCFCFC" fill-rule="evenodd"
                   d="M1.167.25a.667.667 0 1 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611L4.138.786A.667.667 0 0 0 3.484.25H1.167ZM5.69 8.544 4.878 4.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"
                   clip-rule="evenodd" />
               </svg>
-            </span>
+            </button>
           </li>
           <li class="taste-card">
             <img class="taste-image" src="./images/content/tastes/sundaes/blueberry-sundae.png"
@@ -322,13 +319,14 @@
             <h3 class="taste-title">Черника</h3>
             <p class="taste-description">Крем-брюле с черничным джемом</p>
             <p class="taste-price">330 ₽/кг</p>
-            <span class="taste-basket">
+            <button class="taste-basket-button" type="button">
+              <span class="visually-hidden">Кнопка добавления товара в корзину</span>
               <svg class="taste-basket-image" xmlns="http://www.w3.org/2000/svg" width="15" height="14" fill="none">
                 <path fill="#FCFCFC" fill-rule="evenodd"
                   d="M1.167.25a.667.667 0 1 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611L4.138.786A.667.667 0 0 0 3.484.25H1.167ZM5.69 8.544 4.878 4.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"
                   clip-rule="evenodd" />
               </svg>
-            </span>
+            </button>
           </li>
           <li class="taste-card">
             <img class="taste-image" src="./images/content/tastes/sundaes/bubble-gum-sundae.png"
@@ -336,13 +334,14 @@
             <h3 class="taste-title">Бабл-гам</h3>
             <p class="taste-description">Ванильный пломбир со сладкой посыпкой</p>
             <p class="taste-price">320 ₽/кг</p>
-            <span class="taste-basket">
+            <button class="taste-basket-button" type="button">
+              <span class="visually-hidden">Кнопка добавления товара в корзину</span>
               <svg class="taste-basket-image" xmlns="http://www.w3.org/2000/svg" width="15" height="14" fill="none">
                 <path fill="#FCFCFC" fill-rule="evenodd"
                   d="M1.167.25a.667.667 0 1 0 0 1.333h1.77l.468 2.336a.664.664 0 0 0 .011.053l.967 4.833a1.826 1.826 0 0 0 1.819 1.47h5.62a1.826 1.826 0 0 0 1.819-1.47l.001-.005.927-4.861a.667.667 0 0 0-.655-.792H4.611L4.138.786A.667.667 0 0 0 3.484.25H1.167ZM5.69 8.544 4.878 4.48h8.23l-.775 4.067a.492.492 0 0 1-.492.395H6.183a.492.492 0 0 1-.492-.397Zm-1.134 3.961a1.246 1.246 0 1 1 2.492 0 1.246 1.246 0 0 1-2.492 0Zm6.374 0a1.246 1.246 0 1 1 2.491 0 1.246 1.246 0 0 1-2.491 0Z"
                   clip-rule="evenodd" />
               </svg>
-            </span>
+            </button>
           </li>
         </ul>
       </section>
@@ -352,34 +351,18 @@
             производства на развес</h2>
           <ul class="advantages-list">
             <li class="advantage-item">
-              <span class="advantage-element">
-                <img class="advantage-icon" src="./images/content/advantages/ice-cream-icon.svg" alt="Иконка мороженого"
-                  width="16" height="32">
-              </span>
               <p class="advantage-description">Всё наше мороженое изготавливается на собственном производстве с
                 использованием современного оборудования и проверенных временем технологий.</p>
             </li>
             <li class="advantage-item">
-              <span class="advantage-element">
-                <img class="advantage-icon" src="./images/content/advantages/cow-icon.svg" alt="Иконка коровы"
-                  width="32" height="32">
-              </span>
               <p class="advantage-description">Закупка ингредиентов производится только у проверенных фермерских
                 хозяйств, с которыми нас связывает долговременное сотрудничество.</p>
             </li>
             <li class="advantage-item">
-              <span class="advantage-element">
-                <img class="advantage-icon" src="./images/content/advantages/leaf-icon.svg" alt="Иконка листика"
-                  width="19" height="32">
-              </span>
               <p class="advantage-description">Для приготовления мороженого используются сливки и молоко высочайшего
                 качества. Все ингредиенты и добавки произведены из натурального сырья.</p>
             </li>
             <li class="advantage-item">
-              <span class="advantage-element">
-                <img class="advantage-icon" src="./images/content/advantages/thermometer-icon.svg"
-                  alt="Иконка градусника" width="19" height="32">
-              </span>
               <p class="advantage-description">Доставка нашего мороженого осуществляется в специальном термопаке,
                 который не даёт мороженому растаять и позволяет сохранить превосходный вкус.</p>
             </li>
