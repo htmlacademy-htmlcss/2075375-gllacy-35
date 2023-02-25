@@ -473,10 +473,10 @@ body {
   justify-content: center;
   align-items: center;
   column-gap: 8px;
-  width: 88px;
+  min-width: 88px;
   min-height: 32px;
   margin: 0;
-  padding: 0;
+  padding: 0 16px;
   background: rgba(252, 252, 252, 0.3);
   color: #2D3440;
   border: none;
@@ -713,10 +713,10 @@ body {
   justify-content: center;
   align-items: center;
   column-gap: 8px;
-  width: 115px;
+  min-width: 115px;
   min-height: 32px;
   margin: 0;
-  padding: 0;
+  padding: 0 16px;
   background: rgba(252, 252, 252, 0.3);
   color: #2D3440;
   border: none;
@@ -1612,6 +1612,7 @@ body {
 .taste-basket-button {
   display: grid;
   place-items: center;
+  flex-shrink: 0;
   width: 32px;
   height: 32px;
   background: #FF2F64;
@@ -1619,6 +1620,7 @@ body {
   border: none;
   cursor: pointer;
   margin: 0;
+  margin-bottom: auto;
   padding: 0;
 }
 
@@ -1795,13 +1797,28 @@ body {
 }
 
 .news-link {
+  position: relative;
   box-sizing: border-box;
   width: 570px;
   min-height: 224px;
-  background-image: url("../images/content/news-n-subscription/news-background.jpg");
-  border-radius: 16px;
   padding: 33px 235px 32px 32px;
   text-decoration: none;
+}
+
+.news-link::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFF;
+  background-image: url("../images/content/news-n-subscription/news-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 116%;
+  background-position: -13px -108px;
+  border-radius: 16px;
+  z-index: -1;
 }
 
 .news-title {
@@ -1989,11 +2006,30 @@ body {
 .delivery {
   position: relative;
   box-sizing: border-box;
+  display: flex;
+  justify-content: space-between;
+  flex-shrink: 0;
   min-height: 534px;
-  background-image: url("../images/content/delivery/delivery-background.jpg");
   border-radius: 16px;
-  padding: 167px 100px 0 100px;
+  padding: 64px 64px 64px 100px;
   margin: 0 0 80px 0;
+}
+
+.delivery::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFF;
+  background-image: url("../images/content/delivery/delivery-background.jpg");
+  background-size: 105%;
+  background-repeat: no-repeat;
+  background-position: -57px -141px;
+  transform: scale(-1, 1);
+  z-index: -1;
+  border-radius: 16px;
 }
 
 .delivery-container-left {
@@ -2001,6 +2037,7 @@ body {
   flex-direction: column;
   row-gap: 24px;
   max-width: 371px;
+  margin: 103px 0 0 0;
 }
 
 .delivery-title {
@@ -2019,9 +2056,6 @@ body {
 
 .delivery-container-right {
   box-sizing: border-box;
-  position: absolute;
-  right: 64px;
-  top: 64px;
   width: 500px;
   min-height: 406px;
   background: #FCFCFC;
@@ -2040,7 +2074,6 @@ body {
 
 .delivery-form {
   display: grid;
-  grid-template-columns: repeat(2, min-content);
   grid-template-rows: min-content min-content 60px;
   grid-template-areas:
     "date telephone"
@@ -2481,8 +2514,23 @@ body {
   position: relative;
   box-sizing: border-box;
   min-height: 492px;
+  padding: 64px 0 64px 64px;
+}
+
+.contacts::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #FFFFFF;
   background-image: url("../images/content/contacts/contacts-background.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+  background-position: center -83px;
   border-radius: 16px;
+  z-index: -1;
 }
 
 .contacts-container {
@@ -2490,9 +2538,6 @@ body {
   flex-direction: column;
   row-gap: 32px;
   box-sizing: border-box;
-  position: absolute;
-  left: 64px;
-  top: 64px;
   width: 343px;
   min-height: 364px;
   padding: 40px;
@@ -2566,7 +2611,6 @@ body {
   background: #FF2F64;
   border: 2px solid #2D3440;
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
-  padding: 14px 34px;
   color: #FCFCFC;
 }
 
@@ -2574,7 +2618,6 @@ body {
   background: #FEAFC3;
   border: 2px solid #2D3440;
   box-shadow: 0 4px 12px rgba(45, 52, 64, 0.1);
-  padding: 14px 34px;
   color: #FCFCFC;
 }
 
@@ -3150,7 +3193,7 @@ body {
 .catalog-filter-sorting-select:focus-visible {
   background-color: rgba(252, 252, 252, 0.4);
   border: 2px solid #FCFCFC;
-  padding: 6px 11px 6px 14px;
+  padding: 6px 12px 6px 12px;
   background-position: right 11px center;
 }
 
